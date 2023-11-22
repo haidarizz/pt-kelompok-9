@@ -1,22 +1,25 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-
-// Import your logo image
 import logo from "../image/logo.png";
 
 const Navbar = () => {
+  const location = useLocation();
+  const isBerandaPage = location.pathname === "/";
+
   let Links = [
     { name: "BERANDA", link: "/" },
-    { name: "BERITA", link: "/" },
-    { name: "PROFIL", link: "/" },
-    { name: "SATWA", link: "/" },
-    { name: "PETA", link: "/" },
-    { name: "KONTAK KAMI", link: "/" },
-    { name: "PESAN TIKET", link: "/" },
+    { name: "BERITA", link: "/berita" },
+    { name: "PROFIL", link: "/profil" },
+    { name: "SATWA", link: "/satwa" },
+    { name: "PETA", link: "/peta" },
+    { name: "KONTAK KAMI", link: "/kontak" },
+    { name: "PESAN TIKET", link: "/pesan" },
   ];
 
-  const [selectedMenuItem, setSelectedMenuItem] = useState("BERANDA");
+  const [selectedMenuItem, setSelectedMenuItem] = useState(
+    isBerandaPage ? "BERANDA" : ""
+  );
   const [selectedLanguage, setSelectedLanguage] = useState("ID");
 
   const handleLanguageClick = (language) => {
@@ -32,45 +35,52 @@ const Navbar = () => {
   return (
     <div className="shadow-md w-full fixed top-0 left-0 h-[75px] z-50">
       <div className="flex  items-center gap-x-2 bg-white duration-200 ease-in-out px-2 h-full rounded-b-[16px]">
-        {/* Use the img element for the logo */}
         <img src={logo} alt="Logo" className="h-[75px]" />
 
-        <div className="flex items-center gap-x-1 font-vollkorn">
-          {/* Language choices */}
-          <span
-            onClick={() => handleLanguageClick("ID")}
-            className={`cursor-pointer font-[16px] ${
-              selectedLanguage === "ID"
-                ? "border-b-2 border-orange text-gray"
-                : "text-black border-b-[2px] border-white"
-            }`}
-          >
-            ID
-          </span>
-          <span className="text-black font-[24px] border-b-[2px] border-white">
-            |
-          </span>
-          <span
-            onClick={() => handleLanguageClick("EN")}
-            className={`cursor-pointer font-[16px] ${
-              selectedLanguage === "EN"
-                ? "border-b-2 border-orange text-gray"
-                : "text-black border-b-[2px] border-white"
-            }`}
-          >
-            EN
-          </span>
-        </div>
+        {!isBerandaPage && (
+          <div className="flex items-center gap-x-1 font-vollkorn">
+            <span className="text-[16px] text-black py-[8px] ml-auto">
+              PEMESANAN TIKET
+            </span>
+          </div>
+        )}
+
+        {isBerandaPage && (
+          <div className="flex items-center gap-x-1 font-vollkorn">
+            {/* Language choices */}
+            <span
+              onClick={() => handleLanguageClick("ID")}
+              className={`cursor-pointer font-[16px] ${
+                selectedLanguage === "ID"
+                  ? "border-b-2 border-orange text-gray"
+                  : "text-black border-b-[2px] border-white"
+              }`}
+            >
+              ID
+            </span>
+            <span className="text-black font-[24px] border-b-[2px] border-white">
+              |
+            </span>
+            <span
+              onClick={() => handleLanguageClick("EN")}
+              className={`cursor-pointer font-[16px] ${
+                selectedLanguage === "EN"
+                  ? "border-b-2 border-orange text-gray"
+                  : "text-black border-b-[2px] border-white"
+              }`}
+            >
+              EN
+            </span>
+          </div>
+        )}
 
         <div
           onClick={() => setOpen(!open)}
           className="text-3xl absolute p-2 right-2 cursor-pointer h-full lg:hidden flex items-center"
         >
           {open ? (
-            // You can customize the close icon as needed
             <GiHamburgerMenu style={{ fontSize: "24px" }} />
           ) : (
-            // You can customize the menu icon as needed
             <GiHamburgerMenu style={{ fontSize: "24px" }} />
           )}
         </div>
@@ -93,7 +103,12 @@ const Navbar = () => {
                 }`}
               >
                 <a
-                  href={selectedMenuItem === "BERANDA" ? link.link : null}
+                  href={
+                    selectedMenuItem === "BERANDA" ||
+                    selectedMenuItem === "PESAN TIKET"
+                      ? link.link
+                      : null
+                  }
                   onClick={() => handleMenuItemClick(link.name)}
                   className="font-vollkorn duration-200 ease-in"
                 >
