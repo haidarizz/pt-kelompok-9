@@ -20,6 +20,7 @@ module.exports = {
       "black" : "#000000",
       "back" : "#1E252B",
       "gray" : "#747D88",
+      "red" : "#FF0000",
     },
     fontFamily: {
       vollkorn: ['Vollkorn']

@@ -15,7 +15,7 @@ const Kalender = () => {
     left: 0,
     width: "100%",
     height: "100%",
-    background: "rgba(255, 255, 255, 0.4)", // White color with 50% opacity
+    background: "rgba(255, 255, 255, 0.7)", // White color with 50% opacity
   };
   const months = [
     "Januari",
@@ -80,6 +80,41 @@ const Kalender = () => {
             </select>
           </div>
         </div>
+        <div className="flex bg-darkgreen mx-4 rounded-t-3xl py-1 justify-center mt-[18px] gap-x-4">
+          <div className="items-center font-vollkorn text-[16px] text-white font-bold">
+            {selectedMonth.toUpperCase()}
+          </div>
+          <div className="items-center font-vollkorn text-[16px] text-white font-bold">
+            |
+          </div>
+          <div className="items-center font-vollkorn text-[16px] text-white font-bold">
+            {selectedYear}
+          </div>
+        </div>
+        <div className="grid grid-cols-7 mx-4 pt-2 pb-1">
+          <div className="flex items-center justify-center font-vollkorn text-[12px] text-black font-bold w-full">
+            MON
+          </div>
+          <div className="flex items-center justify-center font-vollkorn text-[12px] text-black font-bold w-full">
+            TUE
+          </div>
+          <div className="flex items-center justify-center font-vollkorn text-[12px] text-black font-bold w-full">
+            WED
+          </div>
+          <div className="flex items-center justify-center font-vollkorn text-[12px] text-black font-bold w-full">
+            THU
+          </div>
+          <div className="flex items-center justify-center font-vollkorn text-[12px] text-black font-bold w-full">
+            FRI
+          </div>
+          <div className="flex items-center justify-center font-vollkorn text-[12px] text-black font-bold w-full">
+            SAT
+          </div>
+          <div className="flex items-center justify-center font-vollkorn text-[12px] text-red font-bold w-full">
+            SUN
+          </div>
+        </div>
+
         <Table />
       </div>
     </div>
