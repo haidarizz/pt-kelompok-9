@@ -389,7 +389,7 @@ const Kalender = () => {
             <div>: Rp{totalPrice}.000</div>
           </div>
         </div>
-        <div className="flex flex-row justify-between mx-4 mt-2">
+        <div className="flex flex-row justify-between mx-4 mt-2 mb-10">
           <div
             className={`font-vollkorn text-[12px] ${
               totalPrice !== 0 ? "text-orange2" : "text-black"
