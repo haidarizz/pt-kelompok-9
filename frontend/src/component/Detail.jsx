@@ -97,7 +97,7 @@ const Detail = () => {
               <p className="text-[16px]">Ke Identitas</p>
             </a>
             <a
-              href="/rincian"
+              href="/pembayaran"
               className="flex flex-row items-center bg-darkgreen font-vollkorn h-[29px] pl-3 pr-1 gap-x-1 rounded-full"
             >
               <p className="text-[16px]">Bayar</p>
