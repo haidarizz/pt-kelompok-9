@@ -62,14 +62,20 @@ const Etiket = () => {
               Kode booking : 1a2bc
             </div>
           </div>
-          <div className="flex flex-row justify-center items-center gap-x-2">
-            <div className="flex items-center font-vollkorn text-black">
-              Butuh bantuan?
+          <a
+            href="https://wa.me/6281234512312"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex flex-row justify-center items-center gap-x-2">
+              <div className="flex items-center font-vollkorn text-black">
+                Butuh bantuan?
+              </div>
+              <div className="flex items-center text-[24px] text-black">
+                <FaWhatsappSquare />
+              </div>
             </div>
-            <div className="flex items-center text-[24px] text-black">
-              <FaWhatsappSquare />
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
