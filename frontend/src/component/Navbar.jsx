@@ -33,7 +33,7 @@ const Navbar = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0 h-[75px] z-50">
+    <div className="w-full fixed top-0 left-0 h-[75px] z-50">
       <div className="flex  items-center gap-x-2 bg-white duration-200 ease-in-out px-2 h-full rounded-b-[16px]">
         <img src={logo} alt="Logo" className="h-[75px]" />
 
