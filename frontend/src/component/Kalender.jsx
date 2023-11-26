@@ -16,7 +16,7 @@ const Kalender = () => {
     top: 0,
     left: 0,
     width: "100%",
-    height: "100%",
+    height: "100vh",
     background: "rgba(255, 255, 255, 0.7)", // White color with 50% opacity
   };
   const months = [
