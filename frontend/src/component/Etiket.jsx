@@ -55,7 +55,7 @@ const Etiket = () => {
               E-Ticket belum muncul?
             </div>
             <div className="text-black text-opacity-80 text-[16px] font-vollkorn text-justify">
-              Sampaikan melalui Whatsapp GLZ pada nomor +6281234512312 atau klik
+              Sampaikan melalui Whatsapp GLZ pada nomor +6282134054713 atau klik
               logo WA di bawah dengan menyebutkan kode booking Anda.
             </div>
             <div className="text-black text-opacity-80 text-[16px] font-bold font-vollkorn text-left">
@@ -63,7 +63,7 @@ const Etiket = () => {
             </div>
           </div>
           <a
-            href="https://wa.me/6281234512312"
+            href="https://wa.me/6282134054713"
             target="_blank"
             rel="noopener noreferrer"
           >

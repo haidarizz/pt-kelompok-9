@@ -76,7 +76,7 @@ const Qris = () => {
             </div>
             <div className="flex flex-row justify-between gap-x-8 font-vollkorn text-black text-[16px] mt-2">
               <a
-                href="https://wa.me/6281234512312"
+                href="https://wa.me/6282134054713"
                 target="_blank"
                 rel="noopener noreferrer"
               >
