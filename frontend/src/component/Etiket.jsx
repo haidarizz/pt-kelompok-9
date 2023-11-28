@@ -1,5 +1,5 @@
 import React from "react";
-import koala from "../image/koala.png";
+import koala from "../image/beruang.jpg";
 import { FaWhatsappSquare } from "react-icons/fa";
 
 const Etiket = () => {
@@ -14,7 +14,7 @@ const Etiket = () => {
     left: 0,
     width: "100%",
     height: "100vh",
-    background: "rgba(255, 255, 255, 0.7)", // White color with 50% opacity
+    background: "rgba(255, 255, 255, 0.8)", // White color with 50% opacity
   };
   const day_3 = localStorage.getItem("day");
   const month_3 = localStorage.getItem("selectedMonth");

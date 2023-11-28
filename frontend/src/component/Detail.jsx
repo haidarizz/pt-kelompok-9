@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import koala from "../image/koala.png";
+import koala from "../image/beruang.jpg";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 const Detail = () => {
@@ -14,7 +14,7 @@ const Detail = () => {
     left: 0,
     width: "100%",
     height: "100vh",
-    background: "rgba(255, 255, 255, 0.7)", // White color with 50% opacity
+    background: "rgba(255, 255, 255, 0.8)", // White color with 50% opacity
   };
   const day_2 = localStorage.getItem("day");
   const month_2 = localStorage.getItem("selectedMonth");
@@ -32,7 +32,7 @@ const Detail = () => {
       style={backgroundImageStyle}
     >
       <div style={overlayStyle}>
-        <div className="flex flex-col h-full justify-between px-4 pt-[96px] pb-10">
+        <div className="flex flex-col h-full justify-between px-4 pt-[96px] pb-20">
           <div className="flex flex-col justify-center items-center gap-y-4">
             <div className="flex items-center justify-center bg-darkgreen w-[206px] py-2 font-vollkorn text-[16px] rounded-full">
               Rincian Pemesanan

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import koala from "../image/koala.png";
+import koala from "../image/beruang.jpg";
 import qris from "../image/qris.png";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { FaWhatsappSquare, FaDownload } from "react-icons/fa";
@@ -16,7 +16,7 @@ const Qris = () => {
     left: 0,
     width: "100%",
     height: "100vh",
-    background: "rgba(255, 255, 255, 0.7)", // White color with 50% opacity
+    background: "rgba(255, 255, 255, 0.8)", // White color with 50% opacity
   };
 
   //TIMER
@@ -52,7 +52,7 @@ const Qris = () => {
       style={backgroundImageStyle}
     >
       <div style={overlayStyle}>
-        <div className="flex flex-col h-full justify-between px-4 pt-[96px] pb-10">
+        <div className="flex flex-col h-full justify-between px-4 pt-[96px] pb-20">
           <div className="flex flex-col justify-center items-center gap-y-3">
             <div className="flex items-center justify-between bg-darkgreen w-[320px] px-4 py-2 font-vollkorn text-[16px] rounded-full">
               <div>Selesaikan pembayaran dalam</div>

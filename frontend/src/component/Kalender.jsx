@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import koala from "../image/koala.png";
+import koala from "../image/beruang.jpg";
 // import Table from "./Table";
 // import { GiTavernSign } from "react-icons/gi";
 import { FaCircle } from "react-icons/fa";
@@ -17,7 +17,7 @@ const Kalender = () => {
     left: 0,
     width: "100%",
     height: "100vh",
-    background: "rgba(255, 255, 255, 0.7)", // White color with 50% opacity
+    background: "rgba(255, 255, 255, 0.8)", // White color with 50% opacity
   };
   const months = [
     "Januari",

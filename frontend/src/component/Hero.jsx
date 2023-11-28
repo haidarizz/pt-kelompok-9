@@ -1,5 +1,5 @@
 import React from "react";
-import beruang from "../image/beruang.png";
+import beruang from "../image/beruang.jpg";
 import logo from "../image/logo.png";
 
 const Hero = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="w-full h-screen mx-auto text-center flex flex-col justify-center">
         <div className="flex items-center flex-col justify-center h-full">
           <img src={logo} alt="Logo" className="h-[250px]" />
-          <p className="font-vollkorn text-orange2 font-bold text-[24px]">YOGYAKARTA</p>
+          <p className="font-vollkorn text-orange2 font-extrabold mt-[-40px] text-[24px]">YOGYAKARTA</p>
         </div>
       </div>
     </div>
