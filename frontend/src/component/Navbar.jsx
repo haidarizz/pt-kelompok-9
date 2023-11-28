@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import logo from "../image/logo.png";
+import logo from "../image/logo2.png";
 
 const Navbar = () => {
   const location = useLocation();
@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <div className="w-full fixed top-0 left-0 h-[75px] z-50">
       <div className="flex  items-center gap-x-2 bg-white duration-200 ease-in-out px-2 h-full rounded-b-[16px]">
-        <img src={logo} alt="Logo" className="h-[75px]" />
+        <img src={logo} alt="Logo" className="h-[44px]" />
 
         {!isBerandaPage && (
           <div className="flex items-center gap-x-1 font-vollkorn">
