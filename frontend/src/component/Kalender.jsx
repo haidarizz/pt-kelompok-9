@@ -392,7 +392,7 @@ const Kalender = () => {
         <div className="flex flex-row justify-between mx-4 mt-2 mb-10">
           <div
             className={`font-vollkorn text-[12px] ${
-              totalPrice !== 0 ? "text-orange2" : "text-black"
+              totalPrice !== 0 ? "text-black" : "text-black"
             } italic w-[162px]`}
           >
             *harga final, sudah termasuk pajak dan biaya lainnya
